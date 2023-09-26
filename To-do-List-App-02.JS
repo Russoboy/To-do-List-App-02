@@ -13,7 +13,7 @@ addBtn.addEventListener('click', () => {
 });
 
 // Create task
-function createTask(text) {
+ const createTask = (text) => {
     const li = document.createElement('li');
     li.innerHTML = `
         <span>${text}</span>
@@ -25,7 +25,7 @@ function createTask(text) {
 }
 
 // Add event listeners for Edit and Delete buttons
-function addTaskEventListeners(taskItem) {
+const addTaskEventListeners = (taskItem) => {
     const editBtn = taskItem.querySelector('.edit-btn');
     const deleteBtn = taskItem.querySelector('.delete-btn');
     const taskText = taskItem.querySelector('span');
